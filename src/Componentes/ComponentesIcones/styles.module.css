@@ -1,0 +1,40 @@
+:root{
+    --vanilla: #EAE2B7;
+    --xanthous: #FCBF49;
+    --orange: #F77F00;
+    --fire: #D62828;
+    --prussian: #003049;
+}
+
+.titulo {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    color: var(--prussian)
+}
+
+.botao {
+    background-color: #4A90E2;
+    padding-top: 12px;
+    padding-inline: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    color: white; /* Para garantir que o texto do botão seja visível */
+    border: none; /* Removendo a borda padrão */
+    cursor: pointer; /* Mudar cursor ao passar sobre o botão */
+}
+
+.caixaTexto {
+    height: 45px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
