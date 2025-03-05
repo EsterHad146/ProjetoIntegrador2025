@@ -1,0 +1,85 @@
+:root{
+    --vanilla: #EAE2B7;
+    --xanthous: #FCBF49;
+    --orange: #F77F00;
+    --fire: #D62828;
+    --prussian: #003049;
+}
+
+/* Título */
+.titulo {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    color: var(--prussian);
+    /* Garantir que o título fique centralizado na tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botão */
+.botao {
+    background-color: #4A90E2;
+    padding-top: 12px;
+    padding-inline: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto; /* Margin auto para centralizar */
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    max-width: 250px; /* Limita a largura máxima do botão */
+}
+
+/* Caixa de texto */
+.caixaTexto {
+    height: 45px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 100%; /* A caixa de texto ocupará toda a largura do contêiner */
+    max-width: 400px; /* Limita a largura máxima da caixa de texto */
+    margin: 10px auto; /* Centraliza a caixa de texto */
+}
+
+/* Responsividade: Estilos para telas pequenas */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 24px; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .botao {
+        width: 90%; /* Botão ocupa 90% da largura da tela em dispositivos móveis */
+        max-width: 300px; /* Ajuste da largura máxima */
+    }
+
+    .caixaTexto {
+        width: 90%; /* Caixa de texto ocupa 90% da largura da tela */
+        max-width: 300px; /* Ajuste da largura máxima */
+    }
+}
+
+/* Responsividade para telas muito pequenas (como celulares menores) */
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 20px; /* Reduz ainda mais o tamanho do título */
+    }
+
+    .botao {
+        width: 90%; /* Faz o botão ocupar 90% da tela em dispositivos muito pequenos */
+        max-width: 270px;
+    }
+
+    .caixaTexto {
+        width: 90%; /* Faz a caixa de texto ocupar 90% da tela */
+        max-width: 270px;
+    }
+}
